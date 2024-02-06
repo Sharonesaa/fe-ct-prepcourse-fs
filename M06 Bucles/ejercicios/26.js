@@ -5,6 +5,12 @@ function esAnagrama(str1, str2) {
   // IMPORTANTE: Un anagrama es una palabra que se forma
   // con las mismas letras que otra, pero en orden diferente.
   // Tu código:
+  var string1 = str1.toLowerCase().replace("","").split("").sort().join("");
+  var string2 = str2.toLowerCase().replace("","").split("").sort().join("");
+  if (string1 === string2){
+    return true;
+  }
+  return false;
 }
 
 module.exports = esAnagrama;
